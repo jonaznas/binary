@@ -12,10 +12,16 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        forest: {
-          ...require("daisyui/src/colors/themes")["[data-theme=forest]"],
-          primary: "purple",
-          "primary-focus": "purple",
+        mytheme: {
+          "primary": "#DE1D8D",
+          "secondary": "#6419E6",
+          "accent": "#333333",
+          "neutral": "#111111",
+          "base-100": "#000000",
+          "info": "#3ABFF8",
+          "success": "#36D399",
+          "warning": "#FBBD23",
+          "error": "#F87272",
         },
       },
     ],
