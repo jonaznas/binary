@@ -5,7 +5,42 @@
   "projects": {
     "binary": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "skipTests": true,
+          "name": ""
+        },
+        "@schematics/angular:class": {
+          "skipTests": true,
+          "name": ""
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true,
+          "name": ""
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true,
+          "name": ""
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true,
+          "name": ""
+        },
+        "@schematics/angular:module": {},
+        "@schematics/angular:pipe": {
+          "skipTests": true,
+          "name": ""
+        },
+        "@schematics/angular:service": {
+          "skipTests": true,
+          "name": ""
+        },
+        "@schematics/angular:resolver": {
+          "skipTests": true,
+          "name": ""
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",

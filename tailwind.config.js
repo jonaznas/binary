@@ -9,4 +9,15 @@ module.exports = {
   plugins: [
     require("daisyui")
   ],
+  daisyui: {
+    themes: [
+      {
+        forest: {
+          ...require("daisyui/src/colors/themes")["[data-theme=forest]"],
+          primary: "purple",
+          "primary-focus": "purple",
+        },
+      },
+    ],
+  },
 }
