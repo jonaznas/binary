@@ -10,4 +10,5 @@ import { ConverterComponent } from './converter.component';
     CommonModule
   ]
 })
-export class ConverterModule { }
+export class ConverterModule {
+}

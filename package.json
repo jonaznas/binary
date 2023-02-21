@@ -18,8 +18,9 @@
     "@angular/platform-browser": "^15.1.0",
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
+    "@types/animejs": "^3.1.7",
+    "animejs": "^3.2.1",
     "daisyui": "^2.50.2",
-    "javascript-binary-converter": "^1.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"

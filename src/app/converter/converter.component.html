@@ -1,6 +1,20 @@
-<div class="mockup-code relative min-w-[600px] border border-accent">
+<div class="mockup-code relative min-w-[600px] max-w-[600px] border border-accent z-10">
     <textarea
       class="bg-neutral h-12 resize-none block w-full focus:outline-none px-5"
+      placeholder="Type your binary or text here..."
+      (keydown.enter)="convert($event)"
+      (keydown)="onTextareaInput($event)"
       (input)="resizeTextarea($event)"></textarea>
-  <pre data-prefix=">" class="text-success"><code></code></pre>
+  <pre
+    data-prefix=">" class="text-success overflow-x-hidden"
+    *ngIf="detectedAsBinary != null"
+    [ngSwitch]="detectedAsBinary"><code class="animate-typing" *ngSwitchCase="true">Detected as Binary</code><code
+    class="animate-typing" *ngSwitchDefault>Detected as Text</code></pre>
+</div>
+
+<div class="output card card-body border border-primary relative min-w-[600px] max-w-[600px] block -mt-[6rem] z-5 pb-3 px-5">
+  <code *ngIf="showOutputContent" #outputElement>{{ output }}</code>
+  <div class="flex justify-end mt-3 gap-3">
+    <button class="btn btn-accent btn-xs" (click)="copyOutput(output)" #copyButton>Copy</button>
+  </div>
 </div>
